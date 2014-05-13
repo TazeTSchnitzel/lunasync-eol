@@ -9,7 +9,7 @@ if (isset($_GET['p'])) {
     $path = $_GET['p'];
     $id = (int)base_convert($path, 36, 10);
     $streams = json_decode(file_get_contents('streams.json'));
-    if (array_key_exists($id, $streams->streams)) {
+    if (isset($streams->streams[$id])) {
         $data = $streams->streams[$id];
         echo 'Stream data for "' . base_convert($id, 10, 36) . '":';
         echo '<pre>' . htmlspecialchars(json_encode($data, JSON_PRETTY_PRINT)) . '</pre>';
