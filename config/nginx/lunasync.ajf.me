@@ -7,7 +7,7 @@ server {
 
     location / {
         index   index.php;
-        rewrite ^/([0-9a-z]+)$ /index.php/$1;
+        rewrite ^\/([0-9a-z]+)$ /index.php/$1;
     }
 
 	location ~ \.php$ {
