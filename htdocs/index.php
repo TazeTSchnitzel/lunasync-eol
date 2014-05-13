@@ -7,7 +7,7 @@ Lunasync has reached the end of its life.
 
 if (isset($_GET['p'])) {
     $path = $_GET['p'];
-    $id = (int)base_convert($path, 36, 10);
+    $id = base_convert($path, 36, 10);
     $streams = json_decode(file_get_contents('streams.json'));
     if (array_key_exists($id, $streams->streams)) {
         $data = $streams->streams[$id];
