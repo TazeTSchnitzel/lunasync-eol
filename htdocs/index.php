@@ -1,7 +1,8 @@
 <!doctype html>
 <meta charset=utf-8>
 <title>Lunasync EOL</title>
-Lunasync has reached the end of its life.
+<p>Lunasync has reached the end of its life.<br>
+If you're looking for a good alternative, check out <a href="http://cytu.be/">CyTube</a> or <a href="http://luna.berrypunch.net/">Luna</a>.</p>
 
 <?php
 
